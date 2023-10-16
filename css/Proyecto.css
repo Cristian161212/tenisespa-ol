@@ -1,0 +1,24 @@
+/**------------------------------------------------------------------------
+ * ?                                style sheet for tenis español web site
+ * @author         :  Cristian Rodríguez Hidalgo  
+ * @version        : 1.0  
+ * @comments       : class project 23-24
+ *------------------------------------------------------------------------**/
+
+
+body {background-color: pink;
+    margin: 0;
+    padding: 0;   /* Esto es para desactivar el espacio de separación por defecto */
+    
+
+
+}
+
+#wrapper{
+    background-color: white;
+    width: 80%; /* para el ancho "en este caso está al 80%"*/
+    margin: auto; /* Para el margen "centrado automatico"*/
+
+}
+
+
