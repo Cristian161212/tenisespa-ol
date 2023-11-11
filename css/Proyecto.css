@@ -6,19 +6,81 @@
  *------------------------------------------------------------------------**/
 
 
-body {background-color: pink;
+
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;   /* Esto es para desactivar el espacio de separación por defecto */
-    
-
-
+    padding: 0;
+    background: #f7f7f7; /* Color de fondo */
 }
 
-#wrapper{
-    background-color: white;
-    width: 80%; /* para el ancho "en este caso está al 80%"*/
-    margin: auto; /* Para el margen "centrado automatico"*/
-
+#wrapper {
+    width: 90%; /* Ajuste para pantallas más pequeñas */
+    max-width: 1200px; /* Establece un máximo para pantallas más grandes */
+    margin: 0 auto;
 }
 
+header {
+    background: #333;
+    color: #fff;
+    padding: 2% 0; /* Ajuste en porcentaje */
+    text-align: center;
+}
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2%; /* Ajuste en porcentaje */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 2%;
+    background: url('../img/tenis.jpg') center; /* Imagen de fondo para hero section */
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2em; 
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1em; 
+    margin-bottom: 2%; 
+}
+
+.interactivo {
+    display: inline-block;
+    padding: 2% 3%; 
+    background: #ff5e3a; /* Color del botón interactivo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section {
+    padding: 2% 0; 
+}
+
+section h2 {
+    font-size: 1.5em; 
+    margin-bottom: 1.5%; 
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2% 0; 
+}
