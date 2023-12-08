@@ -6,10 +6,11 @@
     <title>Tenis Español</title>
     <link rel="stylesheet" href="css/Proyecto.css">
     <link rel="Shortcut icon" href="./img/raqueta.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="wrapper">
-        <header>
+        
             <nav>
                 <ul>
                     <li><a href="#introduccion">Introducción</a></li>
@@ -24,35 +25,113 @@
                 <p>Descubre la pasión por el tenis en España</p>
                 <a href="#contacto" class="interactivo">¡Únete!</a>
             </div>
-        </header>
+        
 
         <section id="introduccion">
-            <h2>Introducción</h2>
-            <p>Introducción sobre el tenis español.</p>
+            <div class="grid-2"> <!-- esto va a ser el contenedor del grid de 2-->
+                <div class="col-2">
+                 <h1 class="title">Introduction</h1>
+                 <p>This page is about Spanish tennis, here we are going to say all the most important Spanish tennis players, good memories that they have left us and, above all, learn a little more about tennis.</p>
+                 <!-- vínculo a otra página de mi site -->
+                 <a href="intro.html"><button>Read more</button></a>
+                </div>
+                <div class="col-2">
+                    <img id="introimg" src="./img/rafaintro.png" alt="Imagen de Rafa Nadal">
+                </div>
+             </div>
         </section>
+
+
+
+
 
         <section id="Referentes">
             <h2>Referentes</h2>
-            <p>Información sobre la historia y jugadores destacados del tenis español.</p>
+            <div class="grid-4">
+                <div class="col-4">
+                    <!-- vamos a hacer una card interna -->
+                    <div class="card">
+                        <img src="./img/season1.jpg" alt="">
+                        <h3>Rafa nadal</h3>
+                        <p>He is the best of all the tennis players of Spain, has a lot of titles. </p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <!-- vamos a hacer una card interna -->
+                    <div class="card">
+                        <img src="./img/season2.jpg" alt="">
+                        <h3>Manuel Santana</h3>
+                        <p>He stood out for being a true pioneer of the sport in our country (in the 60s), in fact, he was the first who was able to win a Grand Slam , winning a total of in his entire career. Without a doubt, until the arrival of Rafa Nadal, solely because of his great historical contribution, he should be considered one of the best in Spain. </p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <!-- vamos a hacer una card interna -->
+                    <div class="card">
+                        <img src="./img/season1.jpg" alt="">
+                        <h3>Juan Carlos Ferrero</h3>
+                        <p>Winner of 16 ATP titles and finalist of three Grand Slams , winning one of them (the Roland Garros) he even managed to be number one in the ATP ranking in 2003 for 8 weeks . </p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <!-- vamos a hacer una card interna -->
+                    <div class="card">
+                        <img src="./img/session1.jpg" alt="">
+                        <h3>Carlos Moyá</h3>
+                        <p>Finalist of two Grand Slams and winner of a Roland Garros , he also managed to win three Masters Series . He is known lately for being Rafael Nadal's coach since 2016. He was captain of Spain in the 2014 Davis Cup and reached first place in the ATP in 1999, which he held for two weeks.  </p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                
+                
+            </div>
         </section>
 
+
+
+
+
+        
         <section id="Ranking">
             <h2>Ranking</h2>
             <p>Top tenistas españoles.</p>
         </section>
 
         <section id="Hoy en día">
-            <h2>Hoy en día</h2>
+            <h2>Nowadays</h2>
             <p>Como van los tenistas españoles hoy en día.</p>
         </section>
 
         <section id="Recuerdos">
-            <h2>Recuerdos</h2>
+            <h2>Memories</h2>
             <p>Recuerdos históricos del tenis.</p>
         </section>
 
         <footer>
-            <p>© 2023 Tenis Español</p>
+            <div class="footer-content">
+                <!-- Redes Sociales -->
+                <h3>Sígueme en redes:</h3>
+               <a href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+               <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+               <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+               
+    
+                <!-- Barra de Navegación en Modo Texto -->
+                <nav class="text-navigation">
+                    <a href="#introduccion">Introducción</a>
+                    <a href="#Referentes">Referentes</a>
+                    <a href="#Ranking">Ranking</a>
+                    <a href="#Hoy en dia">Hoy en día</a>
+                    <a href="#Recuerdos">Recuerdos</a>
+                </nav>
+    
+                <!-- Vínculo a la Subpágina de Acreditación -->
+                <div class="accreditation-link">
+                    <a href="acreditacion.html">Acreditación</a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

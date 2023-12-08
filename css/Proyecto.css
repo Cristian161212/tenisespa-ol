@@ -6,25 +6,23 @@
  *------------------------------------------------------------------------**/
 
 
+ * {box-sizing:border-box;}
 
-body {
+ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background: #f7f7f7; /* Color de fondo */
 }
 
-#wrapper {
-    width: 90%; /* Ajuste para pantallas más pequeñas */
-    max-width: 1200px; /* Establece un máximo para pantallas más grandes */
-    margin: 0 auto;
-}
-
-header {
+nav {
     background: #333;
     color: #fff;
-    padding: 2% 0; /* Ajuste en porcentaje */
+    padding: 2% 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 nav ul {
@@ -33,14 +31,25 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 2%; /* Ajuste en porcentaje */
+    display: block; /* Cambiado a block para dispositivos móviles */
+    margin-bottom: 2%; /* Ajuste en porcentaje */
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
 }
+
+#wrapper {
+    width: 90%; /* Ajuste para pantallas más pequeñas */
+    max-width: 1200px; /* Establece un máximo para pantallas más grandes */
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+
+/* HERO SECTION */
 
 .hero {
     text-align: center;
@@ -60,7 +69,8 @@ nav a {
 }
 
 .interactivo {
-    display: inline-block;
+    display: block; /* Cambiado a block para dispositivos móviles */
+    width: 100%; /* Ocupar todo el ancho en dispositivos móviles */
     padding: 2% 3%; 
     background: #ff5e3a; /* Color del botón interactivo */
     color: #fff;
@@ -69,6 +79,63 @@ nav a {
     font-weight: bold;
 }
 
+/***********************************************************************************************/
+
+
+
+
+
+
+/* INTRODUCCION */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.col-2 {
+    padding: 4%;
+}
+
+#introimg {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+/******************************************************************* */
+
+
+
+
+
+
+/******************** Referentes SECTION (GRID DE 4) *********************/
+
+#Referentes {background-color: white;}
+.grid-4 {display:grid;
+         grid-template-columns: 100%;}  /*Esto es para mobile first*/
+
+.col-4 {padding:4%;}
+
+
+
+
+
+/**************** estilo de la card  ****************/
+
+.card {border:1px solid gray;
+      background-color: white;
+      border-radius:10px;
+      padding:4%;}
+
+.card:hover {box-shadow:3px 3px 5px #808080;}
+
+.card img {width:100%}
+
+/********************************************************** */
+
+
+
+/* SECTIONS */
 section {
     padding: 2% 0; 
 }
@@ -77,10 +144,56 @@ section h2 {
     font-size: 1.5em; 
     margin-bottom: 1.5%; 
 }
+/**************************************************************/
+
+/* FOOTER */
 
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 2% 0; 
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.social-media a, .text-navigation a, .accreditation-link a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer .fa-facebook {
+    background-color: #3B5998;
+}
+
+footer .fa-twitter {
+    background-color: #55ACEE ;
+}
+
+footer .fa-whatsapp {
+    background-color: #25D366;
+}
+
+.accreditation-link {
+    grid-column: span 1;
+}
+
+/* Media Query para dispositivos con pantalla más grande que 600px */
+@media (min-width: 600px) {
+    nav ul li,
+    .interactivo {
+        display: inline;
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
